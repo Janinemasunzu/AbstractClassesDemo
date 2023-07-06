@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleUI
+{
+    internal abstract class Vehicle
+    {
+        public string Year { get; set; } = "Cars";
+        public string Make { get; set; } = "Trucks";
+        public string Model { get; set; } = "Vans";
+
+        public abstract void DriveAbstract();
+
+        public virtual void DriveVirtual() 
+        {
+            Console.WriteLine("Default Virtual Drive Method");
+        }
+    }
+}
